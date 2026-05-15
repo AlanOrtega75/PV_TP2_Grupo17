@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        const cantidad = parseInt(prompt("¿Cuantos números desea ingresar?"));
+        const numeros = [];
+        let suma = 0;
+        for (let i=0; i<cantidad; i++){
+            const numero = parseInt(prompt(`Ingrese el numero ${i+1}`));
+            numeros.push(numero);
+            suma = suma + numero;
+        }
+        const promedio = suma / numeros.length;
+
+        document.write(`<h2>Numeros ingresados: ${numeros}</h2>`);
+        document.write(`<h2>Promedio: ${promedio}</h2>`);
+    </script>
+</body>
+</html>
