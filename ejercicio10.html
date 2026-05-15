@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 32%, #ffffff 32%, #ffffff 68%, #74acdf 68%, #74acdf 100%);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 3px solid #004c99;
+            padding: 30px;
+            width: 460px;
+            max-width: calc(100% - 40px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .container h2, .container h3, .container p {
+            margin: 0 0 16px;
+        }
+        .container h2 {
+            font-size: 2.4rem;
+        }
+        .container p {
+            font-size: 1.3rem;
+            word-break: break-word;
+        }
+        .container h3 {
+            font-size: 1.8rem;
+            color: #004c99;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+const cantidad = Number(prompt("¿Cuántos números desea ingresar?"));
+
+const numeros = [];
+
+let suma = 0;
+
+for(let i = 0; i < cantidad; i++){
+
+    const numero = Number(prompt(`Ingrese el número ${i + 1}`));
+
+    numeros.push(numero);
+
+    suma += numero;
+}
+
+const promedio = suma / cantidad;
+
+document.write(`
+    <div class="container">
+        <h2>Números ingresados</h2>
+        <p>${numeros.join(", ")}</p>
+        <h3>Promedio: ${promedio}</h3>
+    </div>
+`);
+
+</script>
+
+</body>
+</html>
