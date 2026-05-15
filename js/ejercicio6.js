@@ -1,30 +1,11 @@
-const edades = [];
+const edades = [10, 25, 33, 40, 44, 56, 66, 70];
 
 let suma = 0;
 
-for (let i = 0; i < 8; i++) {
-
-    const edad = Number(prompt(`Ingrese la edad ; ${i + 1}`));
-
-    edades.push(edad);
-}
-
-let contenido = `
-╔════════════════════╗
-║ Lista de edades    ║
-╠════════════════════╣
-`;
-
-for (let edad of edades) {
-
-    contenido += `║ ${edad}\n`;
-
-    suma += edad;
-}
+edades.forEach((edad) => {
+    console.log(`Edad: ${edad}`);
+    suma = suma + edad;
+});
 
 const promedio = suma / edades.length;
-
-contenido += `║ Promedio: ${promedio}\n`;
-contenido += "╚════════════════════╝";
-
-console.log(contenido);
+console.log(`El promedio de las edades es ${promedio}`);

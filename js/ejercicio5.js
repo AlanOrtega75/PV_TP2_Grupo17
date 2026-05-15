@@ -1,14 +1,8 @@
-const horas = Number(prompt("Ingrese las horas ;"));
-const minutos = Number(prompt("Ingrese los minutos ;"));
+const horas = 3;
+const minutos = 45;
 
 const segundos = (horas * 3600) + (minutos * 60);
 
-console.log(`
-╔════════════════════════════╗
-║ Conversión a segundos      ║
-╠════════════════════════════╣
-║ Horas: ${horas}
-║ Minutos: ${minutos}
-║ Segundos: ${segundos}
-╚════════════════════════════╝
-`);
+console.log(`Horas: ${horas}`);
+console.log(`Minutos: ${minutos}`);
+console.log(`El tiempo en segundos es ${segundos}`);

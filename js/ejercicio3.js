@@ -1,11 +1,4 @@
-const radio = Number(prompt("Ingrese el radio de la esfera; "));
+const radio = 4;
+const volumen = (4/3) * Math.PI * (radio**3);
 
-const volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
-
-console.log(`
-╔════════════════════════════╗
-║ Volumen de la esfera       ║
-╠════════════════════════════╣
-║ ${volumen.toFixed(2)} m³
-╚════════════════════════════╝
-`);
+console.log(`El Volumen de la esfera es ${volumen} m³`);

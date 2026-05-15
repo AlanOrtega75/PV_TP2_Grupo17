@@ -1,14 +1,8 @@
-const base = Number(prompt("Ingrese la base del rectángulo en cm ; "));
-const altura = Number(prompt("Ingrese la altura del rectángulo en cm ; "));
+const base = 10;
+const altura = 5;
 
 const area = base * altura;
 const perimetro = 2 * (base + altura);
 
-console.log(`
-╔════════════════════════════╗
-║ Rectángulo                 ║
-╠════════════════════════════╣
-║ Área: ${area} cm²
-║ Perímetro: ${perimetro} cm
-╚════════════════════════════╝
-`);
+console.log(`El área del rectángulo es ${area} cm²`);
+console.log(`El perímetro del rectángulo es ${perimetro} cm`);

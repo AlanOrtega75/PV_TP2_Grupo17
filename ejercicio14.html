@@ -2,67 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 14</title>
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(180deg, #74acdf 0%, #74acdf 34%, #ffffff 34%, #ffffff 66%, #74acdf 66%, #74acdf 100%);
-            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-        }
-        .container {
-            border: 3px solid #004c99;
-            padding: 28px;
-            width: 420px;
-            max-width: calc(100% - 40px);
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 14px;
-            box-shadow: 0 0 18px rgba(0,0,0,0.18);
-        }
-        .container h2 {
-            font-size: 2.4rem;
-            margin: 0 0 16px;
-            color: #003366;
-        }
-        .container p {
-            font-size: 1.3rem;
-            margin: 0;
-            word-break: break-word;
-        }
-    </style>
 </head>
 <body>
-
-<script>
-
-const duplicar = (arreglo) => {
-
-    return arreglo.map(numero => numero * 2);
-};
-
-const cantidad = Number(prompt("¿Cuántos números desea ingresar?"));
-
-const numeros = [];
-
-for(let i = 0; i < cantidad; i++){
-
-    numeros.push(Number(prompt(`Ingrese número ${i + 1}`)));
-}
-
-const resultado = duplicar(numeros);
-
-document.write(`
-    <div class="container">
-        <h2>Arreglo duplicado</h2>
-        <p>${resultado.join(", ")}</p>
-    </div>
-`);
-
-</script>
-
+    <script>
+        const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+        const numeros = [];
+        for (let i = 0; i < cantidad; i++) {
+            const numero = parseInt(prompt(`Ingrese el número ${i + 1}`));
+        numeros.push(numero);
+    }
+    const duplicar = (arreglo) => {
+        const nuevoArreglo = [];
+        arreglo.forEach((numero) => {
+            nuevoArreglo.push(numero * 2);
+        });
+    return nuevoArreglo;
+    };
+    const resultado = duplicar(numeros);
+    document.write(`<h2>Arreglo original: ${numeros}</h2>`);
+    document.write(`<h2>Arreglo duplicado: ${resultado}</h2>`);
+    </script>
 </body>
 </html>

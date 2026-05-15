@@ -1,14 +1,3 @@
-let contenido = `
-╔════════════════════╗
-║ Números impares    ║
-╠════════════════════╣
-`;
-
-for (let i = 1; i <= 20; i += 2) {
-
-    contenido += `║ ${i}\n`;
+for (let i=1; i<=19; i+=2){
+    console.log(i);
 }
-
-contenido += "╚════════════════════╝";
-
-console.log(contenido);

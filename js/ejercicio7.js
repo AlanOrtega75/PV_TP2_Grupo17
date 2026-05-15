@@ -1,31 +1,12 @@
-const nombres = [];
+const nombres = ["Alan", "Josefina", "Enrique", "Valeria", "Emanuel"];
 
-for (let i = 0; i < 6; i++) {
+let NombreLargo = "";
 
-    const nombre = prompt(`Ingrese el nombre ${i + 1}`);
-
-    nombres.push(nombre);
-}
-
-let nombreMasLargo = "";
-
-let contenido = `
-╔════════════════════╗
-║ Lista de nombres   ║
-╠════════════════════╣
-`;
-
-for (let nombre of nombres) {
-
-    contenido += `║ ${nombre}\n`;
-
-    if (nombre.length > nombreMasLargo.length) {
-
-        nombreMasLargo = nombre;
+nombres.forEach((nombre) => {
+    console.log(nombre);
+    if(nombre.length > NombreLargo.length){
+        NombreLargo = nombre;
     }
-}
+});
 
-contenido += `║ Más largo: ${nombreMasLargo}\n`;
-contenido += "╚════════════════════╝";
-
-console.log(contenido);
+console.log(`El Nombre más largo es ${NombreLargo}`);

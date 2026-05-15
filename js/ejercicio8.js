@@ -1,43 +1,19 @@
-const notas = [];
+const notas = [8, 5, 10, 6, 4, 7, 9, 3, 2, 7];
 
 let suma = 0;
-let aprobadas = 0;
+let aprobados = 0;
 
-for (let i = 0; i < 10; i++) {
-
-    const nota = Number(prompt(`Ingrese la nota ${i + 1}`));
-
-    notas.push(nota);
-}
-
-let contenido = `
-╔════════════════════════╗
-║ Lista de notas         ║
-╠════════════════════════╣
-`;
-
-for (let nota of notas) {
-
-    contenido += `║ Nota: ${nota}\n`;
-
-    if (nota >= 6) {
-
-        contenido += "║ ✔ Aprobada\n";
-
-        aprobadas++;
-
-    } else {
-
-        contenido += "║ ✘ Desaprobada\n";
+notas.forEach((nota)=>{
+    console.log(`Nota: ${nota}`);
+    suma = suma + nota;
+    if(nota >= 6){
+        console.log(`Aprobado: ${nota}`);
+        aprobados = aprobados + 1;
+    }else{
+        console.log(`Desaprobado: ${nota}`);
     }
-
-    suma += nota;
-}
+})
 
 const promedio = suma / notas.length;
-
-contenido += `║ Promedio: ${promedio}\n`;
-contenido += `║ Aprobadas: ${aprobadas}\n`;
-contenido += "╚════════════════════════╝";
-
-console.log(contenido);
+console.log(`El Promedio General es ${promedio}`);
+console.log(`La cantidad de aprobados son ${aprobados}`);
