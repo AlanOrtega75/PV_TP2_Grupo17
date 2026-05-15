@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 21</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 34%, #ffffff 34%, #ffffff 66%, #74acdf 66%, #74acdf 100%);
+        }
+        .wrapper {
+            width: 520px;
+            max-width: calc(100% - 32px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 2px solid #004c99;
+            border-radius: 22px;
+            padding: 30px;
+            box-shadow: 0 18px 40px rgba(0,0,0,0.16);
+        }
+        h1 {
+            margin: 0 0 18px;
+            font-size: 2rem;
+            color: #003366;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 24px;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #0f2b55;
+        }
+        select {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 1rem;
+            border: 1px solid #b0c4de;
+            border-radius: 12px;
+            background: #f8faff;
+            color: #0f2b55;
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: #4b5b74;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Países de América</h1>
+        <p>Selecciona un país y la capital se seleccionará automáticamente.</p>
+        <div class="row">
+            <div>
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="canada">Canadá</option>
+                    <option value="mexico">México</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="chile">Chile</option>
+                </select>
+            </div>
+            <div>
+                <label for="capital">Capital</label>
+                <select id="capital">
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="brasilia">Brasilia</option>
+                    <option value="ottawa">Ottawa</option>
+                    <option value="ciudad_de_mexico">Ciudad de México</option>
+                    <option value="bogota">Bogotá</option>
+                    <option value="santiago">Santiago</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer">Abre la consola del navegador para ver el país y la capital seleccionados.</div>
+    </div>
+    <script src="js/ejercicio21.js"></script>
+</body>
+</html>

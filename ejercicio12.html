@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 34%, #ffffff 34%, #ffffff 66%, #74acdf 66%, #74acdf 100%);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 3px solid #004c99;
+            padding: 28px;
+            width: 380px;
+            max-width: calc(100% - 40px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 14px;
+            box-shadow: 0 0 16px rgba(0,0,0,0.18);
+        }
+        .container h2 {
+            font-size: 2.4rem;
+            margin: 0;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+const numero = Number(prompt("Ingrese un número"));
+
+let resultado = "";
+
+if(numero % 2 === 0){
+
+    resultado = "El número es PAR";
+
+}else{
+
+    resultado = "El número es IMPAR";
+}
+
+document.write(`
+    <div class="container">
+        <h2>${resultado}</h2>
+    </div>
+`);
+
+</script>
+
+</body>
+</html>

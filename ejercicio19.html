@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 19</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top right, rgba(255,255,255,0.18) 0%, transparent 35%),
+                        linear-gradient(180deg, #13203a 0%, #0d1624 45%, #08101b 100%);
+            color: #eef2ff;
+        }
+
+        .contenedor {
+            width: 520px;
+            max-width: calc(100% - 32px);
+            padding: 40px;
+            border-radius: 24px;
+            background: rgba(21, 39, 69, 0.94);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.32);
+        }
+
+        .contenedor p {
+            font-size: 1.45rem;
+            margin: 0 0 28px;
+            color: #f1f6ff;
+            line-height: 1.6;
+        }
+
+        button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 32px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #5e84e0, #3e60c3);
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+            box-shadow: 0 16px 28px rgba(36, 83, 168, 0.28);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #4b70cd, #324f9c);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p id="texto">Texto original, HOLA SOY NUEVO</p>
+        <button id="boton">Cambiar texto</button>
+    </div>
+    <script type="module" src="PV_TP2_Grupo17/js/ejercicio19.js"></script>
+</body>
+</html>

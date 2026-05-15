@@ -1,0 +1,9 @@
+# Trabajo Práctico 2 - Programación Visual
+
+## Integrantes
+
+- Emanuel J Valeriano -  Emanuel-J-Valeriano
+- Alan Matias Nahuel Ortega - AlanOrtega75
+## Repositorio
+
+https://github.com/AlanOrtega75/PV_TP2_Grupo17.git
