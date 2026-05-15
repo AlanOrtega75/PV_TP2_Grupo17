@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 22</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 32%, #ffffff 32%, #ffffff 68%, #74acdf 68%, #74acdf 100%);
+        }
+        .card {
+            width: 500px;
+            max-width: calc(100% - 32px);
+            background: rgba(255,255,255,0.96);
+            border: 2px solid #004c99;
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        h1 {
+            margin: 0 0 18px;
+            font-size: 2rem;
+            color: #003366;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 22px;
+            color: #334055;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #0c2950;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 1rem;
+            border: 1px solid #b0c4de;
+            border-radius: 12px;
+            background: #f8fbff;
+            color: #0f2b55;
+            box-sizing: border-box;
+            margin-bottom: 18px;
+        }
+        .output {
+            min-height: 64px;
+            padding: 18px 16px;
+            border-radius: 14px;
+            background: #eff6ff;
+            border: 1px dashed #a8c1e6;
+            color: #0f2b55;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Visualización en vivo</h1>
+        <p>Escribe en el campo y el texto aparecerá automáticamente abajo.</p>
+        <label for="texto">Escribe aquí</label>
+        <input type="text" id="texto" placeholder="Ingresa tu texto...">
+        <div id="vista" class="output">Texto ingresado aparecerá aquí.</div>
+    </div>
+    <script src="js/ejercicio22.js"></script>
+</body>
+</html>

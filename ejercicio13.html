@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 34%, #ffffff 34%, #ffffff 66%, #74acdf 66%, #74acdf 100%);
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        }
+        .container {
+            border: 3px solid #004c99;
+            padding: 26px;
+            width: 340px;
+            max-width: calc(100% - 40px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 14px;
+            box-shadow: 0 0 18px rgba(0,0,0,0.18);
+        }
+        .container h2 {
+            font-size: 2.4rem;
+            margin: 0 0 16px;
+            color: #003366;
+        }
+        .container p {
+            font-size: 1.3rem;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+const mostrarArreglo = (arreglo) => {
+
+    let contenido = "";
+
+    for(let numero of arreglo){
+
+        contenido += `<p>${numero}</p>`;
+    }
+
+    return contenido;
+};
+
+const cantidad = Number(prompt("¿Cuántos números desea ingresar?"));
+
+const numeros = [];
+
+for(let i = 0; i < cantidad; i++){
+
+    numeros.push(Number(prompt(`Ingrese número ${i + 1}`)));
+}
+
+document.write(`
+    <div class="container">
+        <h2>Elementos del arreglo</h2>
+        ${mostrarArreglo(numeros)}
+    </div>
+`);
+
+</script>
+
+</body>
+</html>

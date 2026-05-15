@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #74acdf 0%, #74acdf 33%, #ffffff 33%, #ffffff 67%, #74acdf 67%, #74acdf 100%);
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+        }
+        .container {
+            border: 2px solid #004c99;
+            padding: 32px;
+            width: 420px;
+            max-width: calc(100% - 40px);
+            text-align: left;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+            color: #0d1a33;
+        }
+        .container h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+            letter-spacing: 0.02em;
+        }
+        .container p {
+            font-size: 1.35rem;
+            margin: 10px 0;
+        }
+        .container h3 {
+            font-size: 2rem;
+            margin-top: 22px;
+            color: #004c99;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+const kilometros = Number(prompt("Ingrese los kilómetros recorridos"));
+const litros = Number(prompt("Ingrese los litros consumidos"));
+
+const consumo = litros / kilometros;
+
+document.write(`
+    <div class="container">
+        <h2>Consumo del vehículo</h2>
+        <p>Kilómetros: ${kilometros}</p>
+        <p>Litros: ${litros}</p>
+        <h3>Consumo por km: ${consumo.toFixed(2)}</h3>
+    </div>
+`);
+
+</script>
+
+</body>
+</html>
